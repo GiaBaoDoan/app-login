@@ -1,5 +1,7 @@
 import React from "react";
 import Input, { inputProps } from "./input";
+import apple from "../assets/img/apple.png";
+import gg from "../assets/img/gg.png";
 
 const LoginForm = () => {
   const listInput: inputProps[] = [
@@ -85,14 +87,18 @@ const LoginForm = () => {
         Forgot password?
       </h2>
       <div>
-        <button className="bg-[#FFCA42] mt-[30px] font-[500] py-[15px] px-[30px] rounded-full block w-full">
+        <button className="bg-[#FFCA42] font-bold mt-[30px] py-[15px] px-[30px] rounded-full block w-full">
           Log in
         </button>
-        <button className="bg-[#000] mt-[30px] font-[500] py-[15px] px-[30px] rounded-full block w-full">
-          Log in using Apple
+        <button className="bg-[#000] flex mt-[30px] font-[500] py-[15px] px-[30px] rounded-full justify-center items-center space-x-2 w-full">
+          <span>
+            <img src={apple} className="w-[23px] h-[23px]" alt="" />
+          </span>
+          <span className="text-white font-bold">Log in using Apple</span>
         </button>
-        <button className="bg-[#FFCA42] mt-[30px] font-[500] py-[15px] px-[30px] rounded-full block w-full">
-          Log in
+        <button className="bg-[#F0F5F2] text-[#10405A] mt-[30px] font-[500] py-[15px] px-[30px] rounded-full flex justify-center items-center space-x-2 w-full">
+          <img src={gg} alt="" />
+          <span className="font-bold">Log in using Google</span>
         </button>
       </div>
     </div>
