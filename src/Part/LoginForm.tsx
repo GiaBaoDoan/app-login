@@ -1,9 +1,11 @@
 import React from "react";
 import Input, { inputProps } from "./input";
-import apple from "../assets/img/apple.png";
-import gg from "../assets/img/gg.png";
+import APPLE from "../assets/img/apple.png";
+import GG from "../assets/img/gg.png";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
   const listInput: inputProps[] = [
     {
       icon: (
@@ -65,13 +67,13 @@ const LoginForm = () => {
           stroke-linejoin="round"
         />
       </svg>
-      <h1 className="mt-[30px] text-[#1F5460] text-[32px] font-[700]">
+      <h1 className="mt-[10px] text-[#1F5460] text-[32px] font-[700]">
         Welcome back
       </h1>
-      <span className="text-[#879EA4] inline-block mt-[20px] font-[500] text-[16px]">
+      <span className="text-[#879EA4] inline-block mt-[10px] font-[500] text-[16px]">
         Enter your credential to continue
       </span>
-      <div className="mt-[40px]">
+      <div className="mt-[30px]">
         {listInput.map((item) => {
           return (
             <Input
@@ -87,19 +89,33 @@ const LoginForm = () => {
         Forgot password?
       </h2>
       <div>
-        <button className="bg-[#FFCA42] font-bold mt-[30px] py-[15px] px-[30px] rounded-full block w-full">
+        <button className="bg-[#FFCA42] font-bold mt-[15px] py-[15px] px-[30px] rounded-full block w-full">
           Log in
         </button>
-        <button className="bg-[#000] flex mt-[30px] font-[500] py-[15px] px-[30px] rounded-full justify-center items-center space-x-2 w-full">
+        <button className="bg-[#000] flex mt-[15px] font-[500] py-[15px] px-[30px] rounded-full justify-center items-center space-x-2 w-full">
           <span>
-            <img src={apple} className="w-[23px] h-[23px]" alt="" />
+            <img src={APPLE} className="w-[23px] h-[23px]" alt="" />
           </span>
           <span className="text-white font-bold">Log in using Apple</span>
         </button>
-        <button className="bg-[#F0F5F2] text-[#10405A] mt-[30px] font-[500] py-[15px] px-[30px] rounded-full flex justify-center items-center space-x-2 w-full">
-          <img src={gg} alt="" />
+        <button className="bg-[#F0F5F2] text-[#10405A] mt-[15px] font-[500] py-[15px] px-[30px] rounded-full flex justify-center items-center space-x-2 w-full">
+          <img src={GG} alt="" />
           <span className="font-bold">Log in using Google</span>
         </button>
+      </div>
+      <div className="mt-[70px]">
+        <h2 className="text-[#1F5460] font-[500] flex justify-center">
+          Don’t have account?{" "}
+          <span onClick={() => navigate("/Signup")} className="">
+            Sign up
+          </span>
+        </h2>
+        <div className="flex justify-center">
+          <div
+            style={{ backgroundColor: "rgba(31, 84, 96, 0.20)" }}
+            className="w-[134px] mb-[10px] mt-[15px] h-[5px] rounded-[100px] inline-flex justify-center items-center"
+          ></div>
+        </div>
       </div>
     </div>
   );

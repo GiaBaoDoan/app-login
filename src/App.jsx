@@ -8,7 +8,7 @@ import JobList from "./JobList/JobList";
 import Fillter from "./New/Fillter";
 import About from "./Nine/About";
 import UserProfile from "./ONe/UserProfile";
-import Register from "./Register/Register";
+import Register from "./Form/Register";
 import Subcribetions from "./Seven/Subcribetions";
 import Message from "./Six/Message";
 import Accounts from "./Ten/Accounts";

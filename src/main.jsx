@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Register from "./Register/Register";
-import LoginForm from "./LoginFrom/LoginForm";
+import Register from "./Form/Register";
+import LoginForm from "./Part/loginForm";
+import Signup from "./Part/Signup";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/Login",
         element: <LoginForm />,
+      },
+      {
+        path: "/Signup",
+        element: <Signup />,
       },
     ],
   },
