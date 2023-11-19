@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./Register/Register";
-import LoginForm from "./LoginFrom/loginForm";
+import LoginForm from "./LoginFrom/LoginForm";
 const router = createBrowserRouter([
   {
     path: "/",
