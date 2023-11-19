@@ -20,7 +20,7 @@ import Testimonial from "./testimonial/Testimonial";
 
 function App() {
   return (
-    <div className="font-poppins h-screen flex justify-center ">
+    <div className="font-sora h-screen flex justify-center ">
       {/* <UserProfile /> */}
       {/* <JobList /> */}
       {/* <Collections /> */}
@@ -39,7 +39,7 @@ function App() {
       {/* <Login /> */}
       {/* <Testimonial /> */}
       {/* <Dasboard /> */}
-      <Register />
+      {/* <Register /> */}
     </div>
   );
 }

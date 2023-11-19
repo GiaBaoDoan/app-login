@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
       },
       backgroundImage: {
         "bike-cycle": "./src/assets/img/bek 1.png",

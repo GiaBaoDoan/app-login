@@ -1,6 +1,8 @@
 import React from "react";
 import bek1 from "../assets/img/bek1.png";
+import { useNavigate } from "react-router-dom";
 const Register = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#1F5460] overflow-auto">
       <div className="overflow-auto">
@@ -14,10 +16,13 @@ const Register = () => {
             Everything start from here
           </span>
           <div className="text-[#10405A] space-y-3">
-            <button className="bg-[#FFCA42]  py-[15px] px-[30px] rounded-full block w-full">
+            <button
+              onClick={() => navigate("/login")}
+              className="bg-[#FFCA42] font-[500] py-[15px] px-[30px] rounded-full block w-full"
+            >
               Log in
             </button>
-            <button className="bg-[#D5E7D4] rounded-full py-[15px] px-[30px] block w-full">
+            <button className="bg-[#D5E7D4] font-[500] rounded-full py-[15px] px-[30px] block w-full">
               Sign up
             </button>
           </div>
@@ -26,7 +31,7 @@ const Register = () => {
       <div className="flex justify-center">
         <div
           style={{ backgroundColor: "rgba(242, 244, 245, 0.20)" }}
-          className="w-[134px] mt-[50px] mb-[10px] h-[5px] rounded-[100px] inline-flex justify-center items-center"
+          className="w-[134px]  mt-[50px] mb-[10px] h-[5px] rounded-[100px] inline-flex justify-center items-center"
         ></div>
       </div>
     </div>
