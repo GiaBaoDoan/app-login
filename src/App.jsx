@@ -15,12 +15,12 @@ import Accounts from "./Ten/Accounts";
 import Details from "./Thirty/Details";
 import Collections from "./Three/Collections";
 import Dasboard from "./dashboard/dashborad";
-import Testimonial from "./testimonial/testimonial";
+import Testimonial from "./testimonial/Testimonial";
 import Slide from "./twelve/slide";
 
 function App() {
   return (
-    <div className="font-poppins h-screen flex justify-center items-center">
+    <div className="font-poppins h-screen flex justify-center ">
       {/* <UserProfile /> */}
       {/* <JobList /> */}
       {/* <Collections /> */}
