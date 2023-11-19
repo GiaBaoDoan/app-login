@@ -4,8 +4,8 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./Form/Register";
-import LoginForm from "./Part/loginForm";
-import Signup from "./Part/Signup";
+import LoginForm from "./Part/DangNhap";
+import Signup from "./Part/Dangky.js";
 const router = createBrowserRouter([
   {
     path: "/",

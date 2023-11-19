@@ -12,7 +12,7 @@ const Input: React.FC<inputProps> = ({ icon, placeholder, type }) => {
         <div className="flex items-center space-x-2">
           <div>{icon}</div>
           <input
-            type="text"
+            type={type}
             className="outline-none w-full text-[#879EA4] font-[500] text-[16px]"
             placeholder={placeholder}
             id=""
